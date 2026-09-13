@@ -47,19 +47,19 @@ rock.addEventListener('click',()=>{
     ai.textContent = 'AI'
     playAgainBtn.textContent = 'Play again'
 
-    youIcon.src = '/rock/icon-rock.svg'
+    youIcon.src = 'icon-rock.svg'
 
     if(random===1){
-        aiIcon.src = '/rock/icon-paper.svg'
+        aiIcon.src = 'icon-paper.svg'
         title.textContent='You lose'
         aiScore++
     }
     else if(random===2){
-        aiIcon.src = '/rock/icon-rock.svg'
+        aiIcon.src = 'icon-rock.svg'
         title.textContent='it`s a tie'
     }
     else if(random===3){
-        aiIcon.src = '/rock/icon-scissors.svg'
+        aiIcon.src = 'icon-scissors.svg'
         title.textContent='You win'
         yourScore++
     }
@@ -113,19 +113,19 @@ paper.addEventListener('click',()=>{
     ai.textContent = 'AI'
     playAgainBtn.textContent = 'Play again'
 
-    youIcon.src = '/rock/icon-rock.svg'
+    youIcon.src = 'icon-rock.svg'
 
     if(random===1){
-        aiIcon.src = '/rock/icon-paper.svg'
+        aiIcon.src = 'icon-paper.svg'
         title.textContent='You lose'
         aiScore++
     }
     else if(random===2){
-        aiIcon.src = '/rock/icon-rock.svg'
+        aiIcon.src = 'icon-rock.svg'
         title.textContent='it`s a tie'
     }
     else if(random===3){
-        aiIcon.src = '/rock/icon-scissors.svg'
+        aiIcon.src = 'icon-scissors.svg'
         title.textContent='You win'
         yourScore++
     }
@@ -177,19 +177,19 @@ scissor.addEventListener('click',()=>{
     ai.textContent = 'AI'
     playAgainBtn.textContent = 'Play again'
 
-    youIcon.src = '/rock/icon-rock.svg'
+    youIcon.src = 'icon-rock.svg'
 
     if(random===1){
-        aiIcon.src = '/rock/icon-paper.svg'
+        aiIcon.src = 'icon-paper.svg'
         title.textContent='You lose'
         aiScore++
     }
     else if(random===2){
-        aiIcon.src = '/rock/icon-rock.svg'
+        aiIcon.src = 'icon-rock.svg'
         title.textContent='it`s a tie'
     }
     else if(random===3){
-        aiIcon.src = '/rock/icon-scissors.svg'
+        aiIcon.src = 'icon-scissors.svg'
         title.textContent='You win'
         yourScore++
     }
