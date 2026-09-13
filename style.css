@@ -1,0 +1,178 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: linear-gradient(135deg, #181897, #4ce4a9);
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.game-title{
+    color: white;
+    font-size: 42px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.choice{
+    gap: 20px;
+    display: flex;
+}
+
+.rock, .paper, .scissor{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+.rock{
+    background-color: #2e7d32;
+    background-image: url('icon-rock.svg');
+}
+
+.paper{
+    background-color: #1565c0;
+    background-image: url('icon-paper.svg');
+}
+
+.scissor{
+    background-color: #f9a825;
+    background-image: url('icon-scissors.svg');
+}
+
+.rock:hover, .paper:hover, .scissor:hover{
+    transform: translateY(-6px);
+}
+
+#mymain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    color: white;
+}
+
+.div1{
+    margin-right: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.div2{
+    margin-left: 250px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title, .scoreline, h4{
+    color: white;
+}
+
+.title{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+h4{
+    margin-bottom: 40px;
+    font-size: 33px;
+}
+
+.scoreline{
+    margin-bottom: 40px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.result-icon{
+    width: 180px;
+    margin-top: 10px;
+}
+
+.playAgainBtn{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.playAgainBtn:hover{
+    opacity: 0.85;
+}
+
+.playAgainBtn:active{
+    transform: scale(0.96);
+}
+
+
+@media (max-width: 700px){
+    .game-title{
+        font-size: 28px;
+    }
+
+    .rock, .paper, .scissor{
+        width: 90px;
+        height: 90px;
+    }
+
+    .choice{
+        gap: 12px;
+    }
+
+    #mymain{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .div1, .div2{
+        margin: 0;
+        height: auto;
+    }
+
+    h4{
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .scoreline{
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .result-icon{
+        width: 110px;
+    }
+}
